@@ -7,6 +7,7 @@
 
     <!-- Impor script kamu di sini -->
     <!-- Lampirkan `defer` jika pemanggilan dilakukan dalam <head> -->
+    <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
   </head>
   <body>
@@ -15,18 +16,18 @@
     </header>
 
     <main>
-      <section>
-        <h2>Tambah Buku Baru</h2>
+      <section class="wrapper">
+        <h2 class="container-header text-center">Tambah Buku Baru</h2>
         <form id="bookForm" data-testid="bookForm">
-          <div>
+          <div class="form-group form-title">
             <label for="bookFormTitle">Judul</label>
             <input id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" />
           </div>
-          <div>
+          <div class="form-group form-title">
             <label for="bookFormAuthor">Penulis</label>
             <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" />
           </div>
-          <div>
+          <div class="form-group form-title">
             <label for="bookFormYear">Tahun</label>
             <input id="bookFormYear" type="number" required data-testid="bookFormYearInput" />
           </div>
